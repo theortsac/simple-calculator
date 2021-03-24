@@ -1,10 +1,10 @@
-print("Calculadora Ortsac versão 1.0!")
+print("Ortsac Calculator 1.0!")
 
-print(""" Símbolos para cada operação:
-Adição: +
-Subtração: -
-Multiplicação: *
-Divisão: /
+print(""" Symbols for each operation:
+Addition: +
+Subtraction: -
+Multiplication: *
+Division: /
 """)
 
 repeat = True
@@ -13,42 +13,42 @@ while repeat:
     isItNotChosen = True
     numberIsNotInt = True
     while isItNotChosen:
-        symbol = str(input("Selecione uma operação digitando o seu símbolo: "))
+        symbol = str(input("Select an operation by typing its symbol: "))
         symbolList = ['-', '+', '*', '/']
         if symbol in symbolList:
             isItNotChosen = False
             while numberIsNotInt:
                 try:
                     number1 = int(
-                        input("Qual o primeiro número da sua operação?: "))
+                        input("What is the first number of your operation ?: "))
                     number2 = int(
-                        input("Qual o segundo número da sua operação?: "))
+                        input("What is the second number of your operation ?: "))
                 except ValueError:
-                    print("Isso não é um número!")
+                    print("This is not a number!")
                 else:
                     numberIsNotInt = False
     if symbol == "+":
-        print("A soma dos seus números é: ", number1 + number2)
+        print("The sum of their numbers is: ", number1 + number2)
 
     if symbol == "-":
-        print("A subtração dos seus números é: ", number1 - number2)
+        print("Subtracting your numbers is: ", number1 - number2)
 
     if symbol == "*":
         print("A multiplicação dos seus números é: ", number1 * number2)
 
     if symbol == "/":
-        print("A divisão dos seus números é: ", number1 / number2)
+        print("The division of your numbers is: ", number1 / number2)
 
-    naoRespondidoLoop = True
+    notAnsweredLoop = True
 
-    while naoRespondidoLoop:
+    while notAnsweredLoop:
         loopCalc = str(
-            input("Você quer fazer outra operação? Responda com Sim ou Não: "))
-        if loopCalc == "Não":
+            input("Do you want to do another operation? Answer with Yes or No: "))
+        if loopCalc == "No":
             repeat = False
-            naoRespondidoLoop = False
-        elif loopCalc == "Sim":
+            notAnsweredLoop = False
+        elif loopCalc == "Yes":
             repeat = True
-            naoRespondidoLoop = False
+            notAnsweredLoop = False
     if repeat is False:
-        print("Obrigado por usar a calculadora Ortsac!")
+        print("Thanks for using the Ortsac Calculator 1.0!")
