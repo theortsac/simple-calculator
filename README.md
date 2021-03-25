@@ -92,6 +92,6 @@ notAnsweredLoop = True
     if repeat is False:
         print("Thanks for using the Ortsac Calculator 1.0!")
 ```
-That says "The loop question is not answered, ask it, if it says No (in this case, if it has N), turn repeat to false, and the loop was answered, and if it says Yes (or it has any Y, or S), turn repeat to True, and the loop was answered, and if repeat if False, say 'Thanks for using the Ortsac Calculator 1.0!', but if the answer was not Yes, or No, the loop question was still no answered, so ask again".  
+That says "The loop question is not answered, ask it, if it says No (in this case, if it has N), turn repeat to false, and the loop was answered, and if it says Yes (or it has any Y, or S), turn repeat to True, and the loop was answered, and if repeat is False, say 'Thanks for using the Ortsac Calculator 1.0!', but if the answer was not Yes, or No, the loop question was still no answered, so ask again".  
 ### Final  
 Thanks for reading! It was really fun to write my first github README.md, I hope you understood the content, I am only 13 so it may be a little confusing, see ya!
