@@ -76,7 +76,7 @@ Then, we get to the final function, to do it I got a variable named "repeat" rig
 ``` python
 while repeat:
 ```  
-And put inside this "while", all the code that we did after the "repeat" variable". And last but really not least, we do do this code:  
+And put inside this "while", all the code that we did after the "repeat" variable. And last but really not least, we do do this code:  
 ``` python
 notAnsweredLoop = True
 
