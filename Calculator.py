@@ -17,16 +17,17 @@ while repeat:
         symbolList = ['-', '+', '*', '/']
         if symbol in symbolList:
             isItNotChosen = False
-            while numberIsNotInt:
-                try:
-                    number1 = int(
-                        input("What is the first number of your operation ?: "))
-                    number2 = int(
-                        input("What is the second number of your operation ?: "))
-                except ValueError:
-                    print("This is not a number!")
-                else:
-                    numberIsNotInt = False
+
+    while numberIsNotInt:
+        try:
+            number1 = int(
+                input("What is the first number of your operation ?: "))
+            number2 = int(
+                input("What is the second number of your operation ?: "))
+        except ValueError:
+            print("This is not a number!")
+        else:
+            numberIsNotInt = False
     if symbol == "+":
         print("The sum of their numbers is: ", number1 + number2)
 
@@ -44,10 +45,10 @@ while repeat:
     while notAnsweredLoop:
         loopCalc = str(
             input("Do you want to do another operation? Answer with Yes or No: "))
-        if loopCalc == "No":
+        if loopCalc in "nN":
             repeat = False
             notAnsweredLoop = False
-        elif loopCalc == "Yes":
+        elif loopCalc in "yYSs":
             repeat = True
             notAnsweredLoop = False
     if repeat is False:
