@@ -35,7 +35,7 @@ while repeat:
         print("Subtracting your numbers is: ", number1 - number2)
 
     if symbol == "*":
-        print("A multiplicação dos seus números é: ", number1 * number2)
+        print("The multiplication of your numbers is: ", number1 * number2)
 
     if symbol == "/":
         print("The division of your numbers is: ", number1 / number2)
